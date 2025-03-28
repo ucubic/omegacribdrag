@@ -1,0 +1,28 @@
+minecraft
+<Cr33p3r> Alright, I've got 15 TNT blocks ready to go. Think it'll be enough to wipe out P1nkSh33p's base? Took me about 30 minutes to get.
+<3nd3rm4n> That should definitely do the trick! I've got another 10, so we're good to go. Let's hit it at, say, 21:00 next Tuesday--they'll never see it coming.
+<Cr33p3r> Perfect, Tuesday it is. Let's make sure we're both a hundred blocks from the back of the base so we can watch it all blow up.
+<3nd3rm4n> Absolutely, I can already picture it--P1nkSh33p's reaction when everything goes up in flames. We'll make it epic.
+%%
+shakespeare
+Claudius: By heaven, Gertrude, thou dost know our letters are not safe, for Hamlet hath intercepted mine own. I think upon this foul breach and wonder--should we encrypt our missives with a cipher most secure? Methinks I shall consider the RSA cryptosystem.
+Gertrude: Aye, Claudius, but though RSA be strong, 'tis not without fault. Its key length is great yet it suffers vulnerability, especially to those who may choose their ciphertext. Is't not true the weakness lies in such a craft?
+Claudius: Thou art wise, my queen. Indeed, RSA hath its flaws--'tis like a fortress built on sand. To remedy this, might we not employ the Triple DES method?
+Gertrude: Triple DES? Thou must be joking; 3DES surely doth fail when matched with modern might. What then of AES, a cipher that hath stood unbroken for many a year? I've heard of its strength, and it seems our safest course.
+Claudius: Indeed, AES-128, with its steadfast strength, shall guard our secrets well. The key length is short yet it still doth hold fast against prying eyes, and 'tis more suited to our needs. Shall we proceed with such a cipher, then?
+Gertrude: But of course! Let us choose AES-128, for 'tis both secure and swift. We shall decide on a passphrase so secure not even rogue nephews can intercept thy messages. How about: 18d042331e6fef2e3dea030579efa54c?
+Claudius: Then it is decided. Good-by, Gertrude, and let our letters stay secure for eternity!
+%%
+json
+{"product_action":"update","id":"banana_split","data":{"price":"$6.99"}}
+{"cart_action":"view","cart":["blueberry_sorbet","chocolate_twist","strawberry_gelato"]}
+{"user_action":"set_profile","user_id":"4929421","data":{"favorites":["vanilla","chocolate_chip","mint_chocolate"]}}
+{"product_action":"item_update","id":"strawberry_gelato","data":{"ingredients":["milk","sugar","strawberry"]}}
+{"product_action":"item_update","id":"coconut_milk_ice_cream","data":{"price":"$7.99"}}
+{"cart_action":"view","user_id":"4929052","filter":{"cart":["caramel_sundae","peach_frozen_yogurt"]}}
+{"cart_action":"purchase","user_id":"4929441"}
+{"product_action":"item_meta","item_id":"caramel_sundae","data":{"purchasable":false,"msg":"Out of stock, expected restock in 2 days"}}
+{"cart_action":"add_to_cart","user_id":"4928993","item":"dark_chocolate_truffle"}
+{"cart_action":"remove_from_cart","user_id":"4928993","item":"dark_chocolate_truffle"}
+{"action":"admin_login","email":"johndoe.3@example.com","password":"iL3#keUn1co4rn$!!"}
+{"product_action":"item_update","id":"mango_sorbet","data":{"ingredients":["mango","sugar","water"]}}

@@ -1,0 +1,254 @@
+:root {
+    --font-p: "Roboto", "Helvetica", "Arial", sans-serif;
+    --font-m: monospace;
+
+    font: 1.2rem var(--font-p);
+    line-height: 1.3;
+}
+
+* {
+    /* ligatures mess stuff up in e.g. [ -~] where the -~ is combined */
+    font-variant-ligatures: none !important;
+    scrollbar-color: #fff #888;
+    scrollbar-width: thin;
+}
+
+body {
+    color: #eee;
+    background: #111;
+}
+
+.unimp {
+    font-size: 0.7rem;
+    color: #ccc;
+}
+
+textarea,
+input,
+.fake-input {
+    width: unset;
+    border: 1px solid #888;
+    background: none;
+
+    resize: none;
+
+    font: 1em var(--font-m);
+
+    caret-color: #eee;
+    color: inherit;
+
+    overflow: auto;
+}
+
+button {
+    color: #ddd;
+    font: inherit;
+    background: none;
+    border: 1px solid #888;
+    cursor: pointer;
+    margin: 0 0.4em;
+}
+button:hover {
+    background: #222;
+    color: #fff;
+}
+
+#ciphertexts {
+    width: 100%;
+    height: 12em;
+
+    white-space: nowrap;
+}
+#extra-options {
+    float: right;
+}
+
+a {
+    color: #88f;
+}
+
+.tooltip {
+    position: relative;
+    cursor: pointer;
+    > * {
+        display: none;
+
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        width: 20rem;
+
+        border: 1px solid #888;
+        background: #222;
+        font-size: 0.7em;
+        color: #ccc;
+        margin-bottom: 2em;
+        padding: 0.2em;
+    }
+}
+.tooltip:hover {
+    text-decoration: underline;
+    > * {
+        display: unset;
+    }
+}
+
+#main-tables {
+    margin-bottom: 2em;
+
+    > .dummy {
+        position: absolute;
+        font: 1em var(--font-m);
+        width: 1ch;
+        height: 1lh;
+    }
+}
+.main-table-container {
+    overflow: hidden;
+}
+.main-table-align {
+    position: relative;
+}
+.main-table-align > table {
+    position: relative;
+    font: 1em var(--font-m);
+
+    border-spacing: 0;
+
+    tr {
+        position: relative;
+        height: 1lh;
+        width: 100%;
+    }
+    tr.highlight::after {
+        content: "";
+        position: absolute;
+        inset: 0;
+        background: #fff2;
+    }
+
+    td {
+        padding: 0;
+        white-space: pre;
+        width: 1ch;
+    }
+
+    .xn {
+        background: #333;
+    }
+    .xf {
+        background: #144;
+    }
+    .xw {
+        background: #441;
+    }
+    .xt {
+        background: #141;
+    }
+    .xi {
+        background: #411;
+    }
+}
+.main-table-deco {
+    position: absolute;
+    top: 0;
+    height: 100%;
+
+    line-height: 1.1;
+
+    font: 1em var(--font-m);
+    mix-blend-mode: screen;
+
+    > .deco:hover {
+        --lig: 20%;
+    }
+    > .deco {
+        --lig: 10%;
+
+        position: absolute;
+        text-align: center;
+        white-space: nowrap;
+        overflow: hidden;
+
+        bottom: 0;
+
+        --hue: 100deg;
+        border: 1px solid hsl(var(--hue) 100% 50%);
+        border-bottom: none;
+        border-radius: 0.5em 0.5em 0 0;
+
+        > .deco-label {
+            display: block;
+            font: 0.9em var(--font-p);
+            padding: 0.2em;
+            position: absolute;
+            top: 0;
+
+            cursor: pointer;
+            z-index: 1;
+
+            background: hsl(var(--hue) 100% var(--lig) / 80%);
+        }
+        > .deco-indicator {
+            position: relative;
+            height: 1lh;
+            width: 100%;
+            background: #fff4;
+
+            cursor: grab;
+            z-index: 1;
+        }
+    }
+    .deco::before {
+        content: "";
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        top: 0;
+        left: 0;
+        z-index: -1;
+
+        background: hsl(var(--hue) 100% var(--lig));
+    }
+    > .deco.deco-possible {
+        --hue: 50deg;
+        cursor: pointer;
+    }
+    > .deco.deco-new {
+        --hue: 200deg;
+        cursor: pointer;
+    }
+}
+
+fieldset {
+    border: 1px solid #888;
+    border-radius: 0.5em;
+}
+
+#instructions {
+    .instr-fade {
+        position: relative;
+        opacity: 0.8;
+        pointer-events: none;
+        overflow: hidden;
+    }
+    .instr-fade::after {
+        content: "";
+        position: absolute;
+        background-image: linear-gradient(to top, #111, #1110);
+        bottom: 0;
+        left: 0;
+        width: 100%;
+        height: 2em;
+    }
+}
+
+body {
+    margin: 0;
+    padding: 30vh 0;
+}
+@media (min-width: 800px) {
+    #main {
+        padding: 0 4rem;
+    }
+}

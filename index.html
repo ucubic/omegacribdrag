@@ -1,0 +1,99 @@
+<!doctype html>
+<html>
+    <head>
+        <meta charset="utf-8" />
+        <title>otpCrack</title>
+
+        <link href="./index.css" rel="stylesheet" />
+    </head>
+    <body>
+        <div id="main">
+            <p>
+                Ciphertexts <button id="ciphertexts-clear">Clear</button>
+                <span id="extra-options">
+                    <button id="share-button">Share Link</button>
+                    <span id="ciphertexts-presets"> Presets: </span>
+                </span>
+            </p>
+            <textarea
+                id="ciphertexts"
+                placeholder="Enter newline or comma-separated hex or base64 ciphertexts here..."
+            ></textarea>
+            <p style="padding-bottom: 1lh">
+                Main table <button id="main-table-clear">Clear</button>
+            </p>
+            <div id="main-tables"></div>
+
+            <input id="crib-input" placeholder="crib; type / to focus" />
+
+            <p>
+                <label for="valid-range">Valid bytes:</label>
+                <input id="valid-range" placeholder="[A-Za-z ?!,'.-]" />
+            </p>
+            <p>
+                <label for="acceptable-range">Acceptable bytes:</label>
+                <input id="acceptable-range" placeholder="[ -~]" />
+            </p>
+            <!-- <span class="tooltip">
+                ?
+                <div>
+                    <p>
+                        Which bytes can appear in a message. This is parsed a
+                        regular expression matched on every byte and defaults to
+                        all printable characters (<code>[ -~]</code>).
+                    </p>
+                    <p>You can also try:</p>
+                    <ul>
+                        <li>
+                            <code>[A-Za-z0-9 ?!,'.-]</code> for English letters,
+                            numbers, and common punctuation
+                        </li>
+                        <li><code>[\s\S]</code> for everything</li>
+                    </ul>
+                </div>
+            </span> -->
+
+            <!-- <div>
+                <p>
+                    Web crib-dragging implementation that supports more than two
+                    ciphertexts and has a variety of things to make
+                    crib-dragging easier.
+                </p>
+
+                <p>
+                    Other web implementations of crib-dragging: <br />
+                    <a href="http://cribdrag.com/index.html"
+                        >http://cribdrag.com/index.html</a
+                    >
+                    <br />
+                    <a href="https://www.tausquared.net/pages/ctf/twotimepad"
+                        >https://www.tausquared.net/pages/ctf/twotimepad</a
+                    >
+                </p>
+            </div> -->
+            <!-- <div id="instructions">
+                <h1>Instructions</h1>
+
+                <ol>
+                    <li>
+                        Paste in newline-separated hex or base64-encoded
+                        ciphertexts
+                        <div class="instr-fade" style="height: 5em">
+                            <div class="fake-input" style="height: 7em">
+                                7e4f30af985f32227a0328fbb1a5f571c9dab390e952
+                                <br />
+                                534d24b3ca543d6c7c5535f5e5adf673c5 <br />
+                                4b4436b28f1b323f3d4d33b4e6a5e03d8891bf9afb
+                                <br />
+                                4c443cb5865f7b2e78033df6fda1b9698691bb93e712
+                                <br />
+                            </div>
+                        </div>
+                    </li>
+                </ol>
+            </div> -->
+        </div>
+        <script src="./presets.js"></script>
+        <script src="./index.js"></script>
+    </body>
+</html>
