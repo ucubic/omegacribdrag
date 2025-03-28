@@ -245,7 +245,6 @@ fieldset {
 
 body {
     margin: 0;
-    padding: 30vh 0;
 }
 @media (min-width: 800px) {
     #main {
