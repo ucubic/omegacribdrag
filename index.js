@@ -520,7 +520,7 @@ const rerender = () => {
 
   /* @type { number[][] } */
   const headerRowsPerTable = tables.map((table) =>
-    drags.size === 0 ? [] : Array(table.numHeaderRows),
+    drags.size === 0 ? [] : Array(table.numHeaderRows).fill(0),
   );
 
   const decosPerTable = tables.map((_) => []);
